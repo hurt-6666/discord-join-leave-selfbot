@@ -3,7 +3,7 @@ const d = require('discord.js')
 const bot = new d.Client()
 const request = require('request')
 bot.on('message',async msg => {
-    if(msg.author.id !== '489219473476157460') return
+    if(msg.author.id !== 'yourid') return
     if(msg.channel.type !== 'dm') return
     if(msg.content.toLowerCase().startsWith('^leave')){
         let args = msg.content.split(" ").slice(1)
@@ -17,7 +17,7 @@ bot.on('message',async msg => {
          { 
            Host: 'discordapp.com',
            Accept: '*/*',
-           Authorization: String('NjEwNTkyOTE0NzQ1MDY1NTA3.XVHhJA.kRkPqqobXvX35EZSvYqOcNkz8Nc').replace('\r',''),
+           Authorization: String('token').replace('\r',''),
            'Content-Type': 'application/json' },
         json: true };
     request(options, function (error, response, body) {
@@ -43,7 +43,7 @@ var options = { method: 'POST',
      Connection: 'keep-alive',
      Host: 'discordapp.com',
      Accept: '*/*',
-     Authorization: String('NjEwNTkyOTE0NzQ1MDY1NTA3.XVHhJA.kRkPqqobXvX35EZSvYqOcNkz8Nc').replace('\r',''),
+     Authorization: String('token').replace('\r',''),
      'Content-Type': 'application/json' },
     json: true };
     request(options, function (error, response, body) {
@@ -56,4 +56,4 @@ var options = { method: 'POST',
     });
     }
 })
-bot.login(`NjEwNTkyOTE0NzQ1MDY1NTA3.XVHhJA.kRkPqqobXvX35EZSvYqOcNkz8Nc`)
+bot.login(`token`)
