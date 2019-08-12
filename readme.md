@@ -1,4 +1,4 @@
-This is just a simple few lines of code to use the discord api to join / leave servers on a discord user accounts.
+This is just a simple few lines of code to use the discord api to join / leave servers on a discord user account.
 
 Use this at your own risk discord has brain cells and can see if you do this too many times (ban basically)
 
